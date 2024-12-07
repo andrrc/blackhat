@@ -1,0 +1,13 @@
+.chat-container{
+    background-color: black;
+    width: calc(100dvw - 40);
+    height: calc(100vh - 97px);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.chat{
+    width: 100vw;
+    height: 5rem;
+    border: 2px solid white;
+}

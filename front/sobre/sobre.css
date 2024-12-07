@@ -1,0 +1,30 @@
+section{
+    background-color: black;
+    height: 100%;
+    color: white;
+    padding-top: 50px;
+    padding-inline: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: justify;
+    overflow-wrap: break-word;
+}
+p,h1{
+    max-height: 80%;
+    max-height: 100%;
+}
+section h1{
+    font-size: 48px;
+    font-family: 'Raleway';
+}
+section p{
+    font-size: 30px;
+    font-family: 'Raleway';
+}
+@media screen and (max-width: 768px) {
+    section p, section h1{
+        font-size: 1.2rem;
+    }
+
+}
