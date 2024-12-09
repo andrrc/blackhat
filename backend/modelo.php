@@ -15,7 +15,7 @@ $client = new Client();
 
 $response = $client->post('https://api.openai.com/v1/chat/completions', [
     'json' => [
-        'model' => 'gpt-3.5-turbo', 
+        'model' => 'gpt-3.5-turbo',
         'messages' => [
             ['role' => 'system', 'content' => 'O que é Inteligência Artificial?']
         ],

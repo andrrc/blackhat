@@ -1,118 +1,60 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-html,body{
-    height: 100%;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway";
+  list-style-type: none;
+  text-decoration: none;
 }
 body {
-    background-color: white;
+  background-color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
-
+html,
+body {
+  height: 100%;
+}
 header {
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    border: 2px solid black;
-    color: black;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    position: relative;
-    font-family: 'Raleway';
+  width: 100dvw;
+  height: 6rem;
+  background-color: white;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
- .logo{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: end;
+ul {
+  display: flex;
+  gap: 20px;
 }
-header .logo h1 {
-    font-size: 28px;
-    font-weight: bold;
-    color: #e0e0e0;
+.logo {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
-
-header nav ul {
-    list-style-type: none;
+a {
+  color: black;
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  header {
     display: flex;
+    flex-direction: column;
     gap: 20px;
-}
-nav{
-    display: flex;
     justify-content: center;
-    width: 50%;
-    height: 100%;
     align-items: center;
-} */
-header nav ul li {
-    position: relative;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    color: black;
-    transition: color 0.3s, transform 0.3s;
-}
-
-header nav ul li a:hover {
-    color: #ff6f61;
-    transform: scale(1.1);
-}
-
-.menu-icon {
-    display: none;
-    cursor: pointer;
-    font-size: 30px;
-    transition: transform 0.3s;
-}
-
-.menu-icon:hover {
-    transform: rotate(90deg);
-}
-
-@media screen and (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 20px;
-        justify-content: center;
-        align-items: center;
-    }
-    .logo{
-        justify-content: center;
-    }
-    header nav {
-        width: 100%;
-        display: none;
-        margin-top: 10px;
-    }
-
-    header nav ul {
-        width: 100%;
-        display: block;
-        padding: 10px 0;
-    }
-
-    header nav ul li {
-        width: 100%;
-        text-align: center;
-        border-top: 1px solid #444;
-    }
-
-    header nav ul li a {
-        display: block;
-        padding: 15px 0;
-        font-size: 20px;
-    }
-
-    .menu-icon {
-        display: block;
-    }
-}
-.show-menu {
-    display: block;
+    height: 8rem;
+  }
+  .logo {
+    justify-content: center;
+  }
 }
